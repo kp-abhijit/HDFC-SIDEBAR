@@ -1,0 +1,23 @@
+@font-face {
+    font-family: satoshi-var;
+    src: url(./Satoshi-Variable.ttf);
+}
+
+
+.main{
+    padding: 50px;
+}
+.sidebarHeading{
+    font-family: satoshi-var;
+    color: rgba(48, 70, 89, 0.7);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.links{
+    width: 327px;
+    // border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
