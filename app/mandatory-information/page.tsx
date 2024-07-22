@@ -1,0 +1,25 @@
+import React from 'react'
+import Sidebar from '../Components/Sidebar/Sidebar'
+import styles from "./page.module.scss"
+import Link from 'next/link'
+
+const page = () => {
+    return (
+        <div className={styles.container}>
+            <Sidebar />
+            <div className={styles.info}>
+                <h1>Mandatory Information</h1>
+                <p>HDFC Securities role here is limited to a Referrer. HDFC Securities will introduce the customer with the platform provider, Global Investing post which clients will be directly sharing their details to a third party stock broker referred by Global Investing.</p>
+                <p>All investments involve risk and the past performance of a security, or financial product does not guarantee future results or returns. Keep in mind that while diversification may help spread risk it does not assure a profit, or protect against loss, in a down market. There is always the potential of losing money when you invest in securities, or other financial products. Investors should consider their investment objectives and risks carefully before investing. Investors should be aware that system response, execution price, speed, liquidity, market data, and account access times are affected by many factors, including market volatility, size and type of order, market conditions, system performance, and other factors.</p>
+                <p>HDFC Securities makes no warranties or representations, express or implied, on products and services offered through the platform. It accepts no liability for any damages or losses, however, caused in connection with the use of related services.</p>
+                <p>All information placed on HDFC Securities website is for informational purposes only and does not constitute as an offer to sell or buy a security. Further, any information on the website is not intended as investment advice. Certain hyperlinks or referenced websites on the Site, if any, are for your convenience and forward you to third parties' websites, which generally are recognized by their top level domain name. Any descriptions of, references to, or links to other products, publications or services does not constitute an endorsement, authorization, sponsorship by or affiliation with HDFC Securities with respect to any linked site or its sponsor, unless expressly stated by HDFC Securities. Any such information, products or sites have not necessarily been reviewed by HDFC Securities and are provided or maintained by third parties over whom HDFC Securities exercise no control. HDFC Securities expressly disclaim any responsibility for the content, the accuracy of the information, and/or quality of products or services provided by or advertised on these third-party sites.</p>
+                <p>Global Investing has represented to us that it is neither a broker nor an investment adviser but is only a platform provider that enables investments in a diverse set of global assets from a single account from anywhere in the world. Therefore, Global Investing makes no warranties or representations, express or implied, on products and services offered through its platform nor does it accepts any liability for any damages or losses that may be caused in connection with the use of related services.</p>
+                <p>Once customers have been referred, they are solely responsible for any and all orders placed by them, and understand that all orders are unsolicited and based on their own investment decisions. HDFC Securities and any of its employees, agents, principals, or representatives DO NOT: provide recommendations of any security, transaction, or order; provide investment advice; produce or provide research to any user regarding any security, transaction, or order; handle funds or securities related to securities orders or effect the clearance or settlement of a user's trades done through in US stock markets or in solution provided by Global Investing All processes including KYC will be executed by the referred Third Party broker & Global Investing directly with client and HDFC Securities will not incur any personal financial liability.</p>
+                <p>Investment in securities market are subject to market risks, read all the related documents carefully before investing. Mutual fund investments are subject to market risks, read all scheme related documents carefully.</p>
+                <p>HDFC Securities is a financial services intermediary and is engaged as a distributor of financial products & services in strategic distribution partnerships. Customers need to check products & features before investing since the contours of the product rates may change from time to time. HDFC Securities is not liable for any loss or damage of any kind arising out of investments in these products. Investments in Equity, Currency, Futures & Options are subject to market risk. Clients should read the Risk Disclosure Document issued by SEBI & relevant exchanges & the T&C before investing. All logos and trademarks belong to their respective legal owners.</p>
+            </div>
+        </div>
+    )
+}
+
+export default page

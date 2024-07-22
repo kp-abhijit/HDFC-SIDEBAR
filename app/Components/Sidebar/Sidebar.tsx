@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from "./Sidebar.module.scss"
-import Link from 'next/link'
 import SidebarLink from '../SidebarLink/SidebarLink'
 
 
@@ -9,74 +8,92 @@ const Sidebar= () => {
         {
             link:"Privacy Policy",
             icon:false,
+            redirect:"privacy-policy"
         },
         {
             link:"Disclaimer",
             icon:false,
+            redirect:"disclaimer"
         },
         {
             link:"Mandatory Information",
-            icon:false
+            icon:false,
+            redirect:"mandatory-information"
         },
         {
             link:"Global Investing Disclaimer",
-            icon:false
+            icon:false,
+            redirect:"global-investing-disclaimer"
         },
         {
             link:"MF & PMS Disclosure",
-            icon:true
+            icon:true,
+            redirect:"mf-pms-disclosure"
         },
         {
             link:"BSE Disclaimer",
-            icon:true
+            icon:true,
+            redirect:"bsedisclaimer"
         },
         {
             link:"Regulatory Information",
-            icon:true
+            icon:true,
+            redirect:"regulatory-information"
         },
         {
             link:"Eligible Scrips",
-            icon:true
+            icon:true,
+            redirect:"eligible-scrips"
         },
         {
             link:"SEBI Scores",
-            icon:true
+            icon:true,
+            redirect:"scores"
         },
         {
             link:"Investment Advisory",
-            icon:true
+            icon:true,
+            redirect:"investment-advisory"
         },
         {
             link:"Advisory for Investors",
-            icon:true
+            icon:true,
+            redirect:"advisory-for-investors"
         },
         {
             link:"Margin Collection",
-            icon:true
+            icon:true,
+            redirect:"margin-collection"
         },
         {
             link:"Privacy Notice EU User",
-            icon:true
+            icon:true,
+            redirect:"privacy-notice-eu-user"
         },
         {
             link:"NSE Holidays",
-            icon:true
+            icon:true,
+            redirect:"nse-holidays"
         },
         {
             link:"BSE Holidays",
-            icon:true
+            icon:true,
+            redirect:"bse-holidays"
         },
         {
             link:"Mission and Vision",
-            icon:true
+            icon:true,
+            redirect:"mission-and-vision"
         },
         {
             link:"Investors Complaints",
-            icon:true
+            icon:true,
+            redirect:"investor-complaints"
         },
         {
             link:"CDSL Evoting",
-            icon:true
+            icon:true,
+            redirect:"cdsl-evoting"
         },
     ]
   return (
@@ -87,7 +104,7 @@ const Sidebar= () => {
             {
                 comlinks.map((link,i)=>{
                     return (
-                        <SidebarLink key={i} link={link.link} icon={link.icon}/>
+                        <SidebarLink key={i} link={link.link} icon={link.icon} redirect={link.redirect}/>
                     )
                 })
             }
